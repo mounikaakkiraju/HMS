@@ -132,7 +132,8 @@ public class AddPatient
 	         }	      
 	      //[text()='"+name+"']
 	    //tr[text()='"+name+"']/td[2]
-		
+
+		//thank you
 	}
 
 }
