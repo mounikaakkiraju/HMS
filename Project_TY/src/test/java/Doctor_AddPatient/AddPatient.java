@@ -134,6 +134,8 @@ public class AddPatient
 	    //tr[text()='"+name+"']/td[2]
 
 		//thank you
+	         
+	         System.out.println("raji");
 	}
 
 }

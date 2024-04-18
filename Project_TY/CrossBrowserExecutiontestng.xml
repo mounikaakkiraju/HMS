@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Suite">
+  <test name="Test1">
+	  <parameter name="Browser" value="Chrome"></parameter>
+	  <classes>
+		  <class name="Project_ObjectRepository.Add_DoctorTest"/>
+		
+	  </classes>
+  </test> <!-- Test -->
+  
+   <test name="Test2">
+	  <parameter name="Browser" value="Firefox"></parameter>
+	  <classes>
+		  <class name="Project_ObjectRepository.Add_DoctorTest"/>
+		  
+	  </classes>
+  </test> <!-- Test -->
+  
+   <test name="Test3">
+	  <parameter name="Browser" value="Edge"></parameter>
+	  <classes>
+		  
+		  <class name="Project_ObjectRepository.Add_DoctorTest"/>
+	  </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
