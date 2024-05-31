@@ -25,7 +25,7 @@ public class ListenersImplimentationClass implements ITestListener
 	
 	
 	
-	public void onTestStart(ITestResult result)
+	public void onTestStart(ITestResult result)//if we want to execute any particular method
 	{
 		String MethodName = result.getMethod().getMethodName();
 		test = report.createTest(MethodName);
@@ -33,14 +33,14 @@ public class ListenersImplimentationClass implements ITestListener
 	
 	}
 	
-	public void onTestSuccess(ITestResult result)
+	public void onTestSuccess(ITestResult result)//if that method is executed succsessfully then this method will comes into the picture
 	{
 		String MethodName = result.getMethod().getMethodName();
 		test.log(Status.PASS, MethodName);
 		Reporter.log(MethodName+"----> executed successfully");
 	}
 	
-	public void onTestFailure(ITestResult result)
+	public void onTestFailure(ITestResult result)//if any method getting failed this method will be execute and take the screenShot
 	{
 		String MethodName = result.getMethod().getMethodName();
 		
@@ -60,7 +60,7 @@ public class ListenersImplimentationClass implements ITestListener
 	}
 	
 	
-	public void onStart(ITestContext context)
+	public void onStart(ITestContext context)//this method is used to make some reporter
 	{
 		ExtentSparkReporter htmlreport = new ExtentSparkReporter("./ExtentReport/Report.html");
 		htmlreport.config().setDocumentTitle("Vtiger");
@@ -77,7 +77,7 @@ public class ListenersImplimentationClass implements ITestListener
 		
 	}
 	
-	public void onTestSkipped(ITestResult result)
+	public void onTestSkipped(ITestResult result)//if any method got skipped this method will execute
 	{
 		String MethodName = result.getMethod().getMethodName();
 		
